@@ -1,0 +1,33 @@
+body {
+	background-color: red;
+}
+
+@media screen and (min-width:511px){
+	body {background-color: blue;}
+	
+}
+table, td {     /* üzerinde ayarlama yapılacak öğeleri belirtildi*/
+  border: 2px solid black; /*çerçeve 2 piksel genişliğinde siyah olarak ayarlandı*/
+  border-radius: 25px; /*çerçeveye 25 piksel kavis verildi*/
+  background-color: grey; /*tablo arkaplanı rengi gri olarak ayarlandı*/
+  color: white; /*yazı rengi beyaz olarak ayarlandı*/
+}
+@media screen and (min-width:511px){
+table, td {
+	background-color: yellow;
+	color: black;
+	border: 2px solid black; /*çerçeve 2 piksel genişliğinde siyah olarak ayarlandı*/
+
+}
+}
+td:hover { /* td yani tablo verisi yada hücrelerinin mouse işaretcisi üzerindeyken ne yapacağını ayarlamak için eklendi */
+  transform: scale(1.25); /*tablo verisi yada hücrelerinin mouse işaretcisi üzerindeyken boyutu büyüyecek şekilde ayarlandı */
+  background-color: white;/*tablo verisi yada hücrelerinin mouse işaretcisi üzerindeyken arka plan rengi beyaza döüşecek şekilde ayarlandı*/
+  color: grey; /*tablo verisi yada hücrelerinin mouse işaretcisi üzerindeyken yazı rengi griye dönüşecek ayarlandı*/
+  }
+ @media screen and (min-width:511px){
+td:hover {
+	background-color: black;
+	color: yellow;
+}
+}
