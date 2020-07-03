@@ -1,0 +1,34 @@
+1.Hafta Özet
+29/06/2020
+5 elemanlı sıralı ve 3.Elmanın 4 elemanlı sırasız liste oluşturuldu ve liste.html olarak kaydedildi.
+3 satırlı ve 4 sütunlu ve tablo kenarlık kalınlığı 2 px olan tablo oluşturldu ve tablo.html olarak kaydedildi.
+Oluşturulan listeyi oluşturulan tablonun 2.Satırının 3.Sütununa yerleştirildi ve table_liste.html olarak kaydedildi
+CSS kullanılarak Düzenlemeler yapıldı örnek olarak arkaplan rengi gri  olarak ayarlandı  ve "hover transform: scale" kodu kullanılarak 
+mouse işaretçisi ile "table cell" yani tablodaki hücrelerin üzerine gelindiğinde hücrenin büyümesi sağlandı.
+Abjustments.css olarak kaydedildi.
+GitHub'daki depoya(Respository'ye) eklendi.
+
+30/06/2020
+Abjustmen css üzerinde düzeltmeler yapıldı.
+GitHub'daki depoya(Respository'ye) tekrar eklendi.
+
+01/07/2020
+Abjustments.css üzerinde media queries kullanılarak web sayfası 511 pikselin üzerinde olduğu sürece "background-color"
+yani arka plan rengi mavi 511 pikselin altına indiğinde kırmızı olacak şekilde ayarlandı ve 
+ver01 dosyası ile GitHub'daki depoya(Respository'ye) eklendi.
+media queries kullanılarak web sayfası 511 pikselin üzerinde olduğu sürece tablo arkaplan rengi sarı, yazı rengi siyah
+511 pikselin altına indiğinde tablo rengi gri, yazı rengi beyaz ve tablo kenarlık rengi beyaz olacak şekilde ayarlandı. 
+Daha önce kullanılan "hover" özelliğine "background-color, color, border-color" kodları eklendi yani mouse işaretçisi
+tablo hüresinin üzerine getildiğinde arkaplan rengi, yazı rengi ve kenarlım rengi değişecek şekilde ayarlandı 
+ve bu özellikler web sayfaı 511 pikselin üzerindeyken görünecek tabloyada uyarlandı ve day-3 dosyası içerisinde 
+ver02 ve ver03 olarak GitHub'daki depoya(Respository'ye) eklendi.
+Daha önce eklenen dosyalar silindi ve yeniden düzenli biçimde GitHub'daki depoya(Respository'ye) eklendi. 
+
+02/07/2020
+CSS Grid hakkında araştırma yapıldı ve kısa özel çıkartılıp GitHub'daki depoya(Respository'ye) eklendi.
+
+03/07/2020
+1.Hafta özet çıkartılıp GitHub'daki depoya(Respository'ye) eklendi.
+
+
+ 
