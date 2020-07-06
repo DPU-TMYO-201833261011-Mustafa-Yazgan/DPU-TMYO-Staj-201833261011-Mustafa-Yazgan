@@ -1,0 +1,24 @@
+.item1 { grid-area: Başlık; } /*item1 sınıfının grid'deki ismi belirlendi.*/
+.item2 { grid-area: Menü; }/*item2 sınıfının grid'deki ismi belirlendi.*/
+.item3 { grid-area: EsasBölüm; }/*item3 sınıfının grid'deki ismi belirlendi.*/
+.item4 { grid-area: Sol; }/*item4 sınıfının grid'deki ismi belirlendi.*/
+.item5 { grid-area: Altblg; }/*item5 sınıfının grid'deki ismi belirlendi.*/
+
+.grid-container { 
+  display: grid; /*görüntü şekli "grid" olarak belirlendi.*/
+  grid-template-areas:/*grid bölümlere ayrıldı.*/
+    'Başlık Başlık Başlık Başlık Başlık Başlık '
+    'Sol EsasBölüm EsasBölüm EsasBölüm EsasBölüm Menü'
+    'Sol Altblg Altblg Altblg Altblg Menü';
+	grid-gap: 10px;/*grid hücreleri arasındaki boşluk 10 piksel olarak ayarlandı.*/
+  background-color: AQUA; /*arkaplan rengi aqua yani deniz rengi olarak ayarlandı.*/
+  padding: 10px;/*grid'in boyutu 10 piksel olarak ayarlandı*/
+}
+
+.grid-container > div { 
+  background-color: LIGHTCYAN;/*gridin içerisindeki div kutularının arkaplan rengi ayarlandı. */
+  text-align: center;/*gridin içerisindeki div kutularının içerisindeki yazılar ortalandı.*/
+  padding: 20px;/*gridin içerisindeki div kutularını boyutları 20 piksel olarak ayarlandı*/
+  font-size: 30px;/*gridin içerisindeki div kutularının içerisindeki yazıların boyutları 30 piksel olarak ayarlandı.*/
+ 
+}
