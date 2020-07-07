@@ -1,0 +1,16 @@
+CSS GRİD NEDİR ?
+Web’in iskelet sistemidir. Satır(row) ve sütun(column) 
+yani yatay ve dikeykılavuz çizgilerinden oluşur. 
+Bu çizgiler kullanılarak web sayfası içerisinde kullanılacak elementler yerleştirilir.
+
+GRİD-LİNE: Numara ile adlandırılan. Yatay yada dikey çizgileridir.
+GRİD-CONTAİNER:  Grid içindeki yapıları oluşturan ana kutu.
+GRİD-ROW: Grid satırı olarak da adlandırılan yatay kısımlardır.
+GRİD-COLUNM: Grid kolonu olarak da adlandırılan dikey kısımlarıdır.
+GRİD-CELL: Grid hücresi olarak da adlandırılır. 4 tane grid line’nın arasında bulunur.
+GRİD-AREA: Birden çok Grid hücresinden oluşan yapılardır.
+GRİD-GAP: Satır yada kolon arasında bulunan boşluklardır.
+GRİD-TRACK: Grid column veya Grid row için kullanılan genel terimdir.
+FR: Fractional Unit, bir ölçeklendirme birimidir. Grid’in içrisindeki tanımlanmış bir alanı ifade eder.
+GRİD-TEMPLATE-COLUMNS:  Grid sütunlarını ölçeklendirmede kullanılır.
+GRİD-TEMPLATE-ROWS: Grid satırlarını ölçeklendirmede kullanılır
