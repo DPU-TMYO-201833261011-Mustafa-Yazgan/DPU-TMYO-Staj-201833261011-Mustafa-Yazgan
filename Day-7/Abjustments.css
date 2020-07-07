@@ -1,0 +1,64 @@
+.item1 { grid-area: Başlık; } /*item1 sınıfının grid'deki ismi belirlendi.*/
+.item2 { grid-area: Menü; }/*item2 sınıfının grid'deki ismi belirlendi.*/
+.item3 { grid-area: EsasBölüm; }/*item3 sınıfının grid'deki ismi belirlendi.*/
+.item4 { grid-area: Sol; }/*item4 sınıfının grid'deki ismi belirlendi.*/
+.açılırliste { grid-area: açılırliste; }/*açılırliste sınıfının grid'deki ismi belirlendi.*/
+
+.grid-container { 
+  display: grid; /*görüntü şekli "grid" olarak belirlendi.*/
+  grid-template-areas:/*grid bölümlere ayrıldı.*/
+    'Başlık Başlık Başlık Başlık Başlık Başlık '
+    'Sol EsasBölüm EsasBölüm EsasBölüm EsasBölüm Menü'
+    'Sol açılırliste açılırliste açılırliste açılırliste Menü';
+	grid-gap: 10px;/*grid hücreleri arasındaki boşluk 10 piksel olarak ayarlandı.*/
+  background-color: AQUA; /*arkaplan rengi aqua yani deniz rengi olarak ayarlandı.*/
+  padding: 10px;/*grid'in boyutu 10 piksel olarak ayarlandı*/
+}
+
+.grid-container > div { 
+  background-color: LIGHTCYAN;/*gridin içerisindeki div kutularının arkaplan rengi ayarlandı. */
+  text-align: center;/*gridin içerisindeki div kutularının içerisindeki yazılar ortalandı.*/
+  padding: 20px;/*gridin içerisindeki div kutularını boyutları 20 piksel olarak ayarlandı*/
+  font-size: 30px;/*gridin içerisindeki div kutularının içerisindeki yazıların boyutları 30 piksel olarak ayarlandı.*/
+ 
+}
+.ALbtn {
+  background-color: AQUA;/*arkaplan rengi aqua yani deniz rengi olarak ayarlandı.*/
+  color: black;/*yazı rengi siyah olarak ayarlandı.*/
+  padding: 16px;/*button'nun boyutu 16 piksel olarak ayarlandı.*/
+  font-size: 30px;/*Button'nun yazı boyutu 30 piksel olarak ayarlandı.*/
+  cursor: pointer;
+  border:none;
+}
+
+.açılırliste {
+  position: relative;/*pozisyonu değiştirile bilir olarak ayarlandı.*/
+  display: inline-block;/*görüntü şekli sıralı blok olarak ayarlandı.*/
+}
+
+.AL-içerik {
+  display: none;
+  position: center;/*açılan listenin pozisyonu ortalandı.*/
+  background-color: LIGHTCYAN;/*gridin içerisindeki div kutularının arkaplan rengi ayarlandı. */
+  min-width: 160px; /*en küçük genişlik değerini 160 piksel olarak ayarlandı.*/
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);/*açılan listeye gölge eklendi.*/
+  z-index: 1;
+}
+
+.AL-içerik a {
+  color: black;/*açılan listedeki yazıların rengi siyah olarak ayarlandı.*/
+  padding: 12px 16px;/*açılan listenin herbir öğesinin yer aldığı blokların boyutları ayarlandı.*/
+  display: block;/*açılan listenin gösterim şekli blok olarak ayarlandı.*/
+}
+
+.AL-içerik a:hover {
+   background-color: AQUA;/*arkaplan rengi aqua yani deniz rengi olarak ayarlandı.*/
+ }
+
+.açılırliste:hover .AL-içerik {
+  display: block;/*açılan listenin gösterim şekli blok olarak ayarlandı.*/
+}
+
+.açılırliste:hover .ALbtn {
+  background-color: AQUA;/*arkaplan rengi aqua yani deniz rengi olarak ayarlandı.*/
+}
