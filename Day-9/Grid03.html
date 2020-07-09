@@ -1,0 +1,49 @@
+<html>
+<style>
+.item1 { grid-area: Başlık; } /*item1 sınıfının grid'deki ismi belirlendi.*/
+.item2 { grid-area: Menü; }/*item2 sınıfının grid'deki ismi belirlendi.*/
+.item3 { grid-area: EsasBölüm; }/*item3 sınıfının grid'deki ismi belirlendi.*/
+.item4 { grid-area: Sol; }/*item4 sınıfının grid'deki ismi belirlendi.*/
+.item5 { grid-area: Altbilgi; }/*açılırliste sınıfının grid'deki ismi belirlendi.*/
+
+.grid-container { 
+  display: grid; /*görüntü şekli "grid" olarak belirlendi.*/
+  grid-template-areas:/*grid bölümlere ayrıldı.*/
+    'Başlık Başlık Başlık Başlık Başlık Başlık '
+    'Sol EsasBölüm EsasBölüm EsasBölüm EsasBölüm Menü'
+    'Sol Altbilgi Altbilgi Altbilgi Altbilgi Menü';
+	grid-gap: 10px;/*grid hücreleri arasındaki boşluk 10 piksel olarak ayarlandı.*/
+  background-color: AQUA; /*arkaplan rengi aqua yani deniz rengi olarak ayarlandı.*/
+  padding: 10px;/*grid'in boyutu 10 piksel olarak ayarlandı*/
+}
+@media screen and (max-width: 511px) {
+  .grid-container { 
+  display: grid; /*görüntü şekli "grid" olarak belirlendi.*/
+  grid-template-areas:/*grid bölümlere ayrıldı.*/
+    'Başlık Başlık Başlık Başlık Başlık Başlık '
+    'Menü Sol Sol Sol Sol EsasBölüm'
+    'Menü Altbilgi Altbilgi Altbilgi Altbilgi EsasBölüm';
+	grid-gap: 10px;/*grid hücreleri arasındaki boşluk 10 piksel olarak ayarlandı.*/
+  background-color: AQUA; /*arkaplan rengi aqua yani deniz rengi olarak ayarlandı.*/
+  padding: 10px;/*grid'in boyutu 10 piksel olarak ayarlandı*/
+}
+  
+}
+.grid-container > div { 
+  background-color: LIGHTCYAN;/*gridin içerisindeki div kutularının arkaplan rengi ayarlandı. */
+  text-align: center;/*gridin içerisindeki div kutularının içerisindeki yazılar ortalandı.*/
+  padding: 20px;/*gridin içerisindeki div kutularını boyutları 20 piksel olarak ayarlandı*/
+  font-size: 30px;/*gridin içerisindeki div kutularının içerisindeki yazıların boyutları 30 piksel olarak ayarlandı.*/
+ 
+}
+</style>
+<link rel="stylesheet" type="text/css" href="Abjustments.css"> <!--CSS dosyası eklendi-->
+<body>
+<div class="grid-container"><!--Div kutusu oluşturuldu ve "grid-container" adı ile sınıflandırıldı.-->
+<div class="item1">Başlık</div><!--içerisinde "Başlık" yazan div kutusu oluşturuldu ve "item1" adı ile sınıflandırıldı-->
+<div class="item2">Menü</div><!--içerisinde "Menü" yazan div kutusu oluşturuldu ve "item2" adı ile sınıflandırıldı-->
+<div class="item3">EsasBölüm</div>  <!--içerisinde "EsasBölüm" yazan div kutusu oluşturuldu ve"item3" adı ile sınıflandırıldı-->
+<div class="item4">Sol</div><!--içerisinde "Sol" yazan div kutusu oluşturuldu ve "item4" adı ile sınıflandırıldı-->
+<div class="item5">Altbilgi</div><!--"Altbilgi" adı ile sınıflandırılmış div kutusu oluşturuldu.-->
+</body>
+</html>
