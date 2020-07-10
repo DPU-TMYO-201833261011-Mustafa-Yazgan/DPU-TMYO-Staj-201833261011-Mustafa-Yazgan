@@ -1,0 +1,146 @@
+<html>
+<style>
+
+@media screen and (min-width: 511px) {
+.item1 { grid-area: İsim; } /*item1 sınıfının grid'deki ismi belirlendi.*/
+.item2 { grid-area: foto; }/*item2 sınıfının grid'deki ismi belirlendi.*/
+.item3 { grid-area: paragraf; }/*item3 sınıfının grid'deki ismi belirlendi.*/
+.item4 { grid-area: liste; }/*item4 sınıfının grid'deki ismi belirlendi.*/
+.item5 { grid-area: ög-no; }/*açılırliste sınıfının grid'deki ismi belirlendi.*/
+.item6 { grid-area: bölüm; }/*açılırliste sınıfının grid'deki ismi belirlendi.*/
+.item7 { grid-area: okul; }/*açılırliste sınıfının grid'deki ismi belirlendi.*/
+.item8 { grid-area: uni; }/*açılırliste sınıfının grid'deki ismi belirlendi.*/
+
+.grid-container { 
+  display: grid; /*görüntü şekli "grid" olarak belirlendi.*/
+  grid-template-areas:/*grid bölümlere ayrıldı.*/
+    'İsim İsim İsim İsim '
+    'liste paragraf paragraf foto'
+    'ög-no bölüm okul uni ';
+	grid-gap: 10px;/*grid hücreleri arasındaki boşluk 10 piksel olarak ayarlandı.*/
+  background-color: AQUA; /*arkaplan rengi aqua yani deniz rengi olarak ayarlandı.*/
+  padding: 10px;/*grid'in boyutu 10 piksel olarak ayarlandı*/
+}
+
+.grid-container > div { 
+  background-color: LIGHTCYAN;/*gridin içerisindeki div kutularının arkaplan rengi ayarlandı. */
+  text-align: center;/*gridin içerisindeki div kutularının içerisindeki yazılar ortalandı.*/
+  padding: 20px;/*gridin içerisindeki div kutularını boyutları 20 piksel olarak ayarlandı*/
+  font-size: 30px;/*gridin içerisindeki div kutularının içerisindeki yazıların boyutları 30 piksel olarak ayarlandı.*/
+}
+ul {
+  list-style-type:none;
+}
+.dropbtn {display:none;}
+.dropdown-content {display:none;}
+
+}
+
+@media screen and (max-width: 511px) {
+.item1{display:none;}
+.item2{display:none;}
+.item3{display:none;}
+.item4{display:none;}
+.item5{display:none;}
+.item6{display:none;}
+.item7{display:none;}
+.item8{display:none;}
+.s {
+display:none;
+}
+
+}
+  .dropbtn {
+  background-color: AQUA;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: LIGHTCYAN;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+ 
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+  background-color: AQUA;
+}
+  
+}
+
+</style>
+<body>
+<div class="dropdown">
+  <button class="dropbtn">Açılır Liste</button>
+  <div class="dropdown-content">
+    <a>Mustafa Yazgan</a>
+    <a><img src="pc.jpg" alt="PC"></a>
+    <a>Bilgisayar,kendisine işlediğimiz bilgileri istediğimizde saklayabilen, istediğimizde geri verebilen cihaza denir. 
+Günümüz bilgisayarları, program adı verilen genelleştirilmiş işlem kümelerini izleme yeteneğine sahiptir. Bu programlar, bilgisayarların çok çeşitli görevleri yerine getirmesini sağlar. 
+"Tam" işletim için gerekli olan ve kullanılan donanım, işletim sistemi (ana yazılım) ve çevresel ekipmanı içeren eksiksiz bir bilgisayar, bir bilgisayar sistemi olarak adlandırılabilir. 
+Bu terim, birbirine bağlı ve birlikte çalışan bir grup bilgisayar, özellikle bir bilgisayar ağı veya bilgisayar kümesi için de kullanılabilir. İlk elektrikli bilgisayar ENIAC'tır.
+Bilgisayarlar, tarih boyunca, çok farklı biçimlerde karşımıza çıkmışlardır. 20. yüzyılın ortalarındaki ilk bilgisayarlar büyük bir oda büyüklüğünde olup, günümüz bilgisayarlarından yüzlerce kat daha fazla güç tüketiyorlardı. 
+21. yüzyılın başına varıldığında ise bilgisayarlar bir kol saatine sığacak ve küçük bir pil ile çalışacak duruma geldiler. Bu kadar küçük imal edilebilmelerinin temel nedeni 1969 yılında yarı iletkenler ile çok küçük alanlara sığdırılabilen devreler yapılabilmesidir. 
+Şu anda kullandığımız bilgisayarlar Intel'in ilk işlemci unvanına sahip olan 4004'ten sonra bilgisayar teknolojisi hız kazanmıştır. Toplumumuz kişisel bilgisayarı ve onun taşınabilir eşdeğeri,
+ dizüstü bilgisayarını, bilgi çağının simgeleri olarak tanıdılar ve bilgisayar kavramıyla özdeşleştirdiler. Günümüzde çok yaygın kullanılmaktadırlar. Bilgisayarın temel çalışma prensibi ikili sayı sistemi yani sadece 0 ve 1 den oluşan kodlamalardır.</a>
+	<a>Kütahya Dumlupınar Üniversitesi</a>
+	<a>Tavşanlı MYO</a>
+	<a>İAT</a>
+	<a>201833261011</a>
+  </div>
+</div>
+<div class="grid-container"><!--Div kutusu oluşturuldu ve "grid-container" adı ile sınıflandırıldı.-->
+<div class="item1">Mustafa Yazgan</div><!--içerisinde "Başlık" yazan div kutusu oluşturuldu ve "item1" adı ile sınıflandırıldı-->
+<div class="item2"><img class="s" src="pc.jpg" alt="PC"></div><!--içerisinde "Menü" yazan div kutusu oluşturuldu ve "item2" adı ile sınıflandırıldı-->
+<div class="item3">Bilgisayar,kendisine işlediğimiz bilgileri istediğimizde saklayabilen, istediğimizde geri verebilen cihaza denir. 
+Günümüz bilgisayarları, program adı verilen genelleştirilmiş işlem kümelerini izleme yeteneğine sahiptir. Bu programlar, bilgisayarların çok çeşitli görevleri yerine getirmesini sağlar. 
+"Tam" işletim için gerekli olan ve kullanılan donanım, işletim sistemi (ana yazılım) ve çevresel ekipmanı içeren eksiksiz bir bilgisayar, bir bilgisayar sistemi olarak adlandırılabilir. 
+Bu terim, birbirine bağlı ve birlikte çalışan bir grup bilgisayar, özellikle bir bilgisayar ağı veya bilgisayar kümesi için de kullanılabilir. İlk elektrikli bilgisayar ENIAC'tır.
+Bilgisayarlar, tarih boyunca, çok farklı biçimlerde karşımıza çıkmışlardır. 20. yüzyılın ortalarındaki ilk bilgisayarlar büyük bir oda büyüklüğünde olup, günümüz bilgisayarlarından yüzlerce kat daha fazla güç tüketiyorlardı. 
+21. yüzyılın başına varıldığında ise bilgisayarlar bir kol saatine sığacak ve küçük bir pil ile çalışacak duruma geldiler. Bu kadar küçük imal edilebilmelerinin temel nedeni 1969 yılında yarı iletkenler ile çok küçük alanlara sığdırılabilen devreler yapılabilmesidir. 
+Şu anda kullandığımız bilgisayarlar Intel'in ilk işlemci unvanına sahip olan 4004'ten sonra bilgisayar teknolojisi hız kazanmıştır. Toplumumuz kişisel bilgisayarı ve onun taşınabilir eşdeğeri,
+ dizüstü bilgisayarını, bilgi çağının simgeleri olarak tanıdılar ve bilgisayar kavramıyla özdeşleştirdiler. Günümüzde çok yaygın kullanılmaktadırlar. Bilgisayarın temel çalışma prensibi ikili sayı sistemi yani sadece 0 ve 1 den oluşan kodlamalardır.</div>  <!--içerisinde "EsasBölüm" yazan div kutusu oluşturuldu ve"item3" adı ile sınıflandırıldı-->
+<div class="item4">
+<ul >
+  <li>Liste</li>
+  <li>Bilgisayar</li>
+  <li>İnternet</li>
+  <li>Donanım</li>
+  <li>Yazılım</li>
+</ul>
+</div><!--içerisinde "Sol" yazan div kutusu oluşturuldu ve "item4" adı ile sınıflandırıldı-->
+<div class="item5">201833261011</div><!--"açılırliste" adı ile sınıflandırılmış div kutusu oluşturuldu.-->
+<div class="item6">İAT</div><!--"açılırliste" adı ile sınıflandırılmış div kutusu oluşturuldu.-->
+<div class="item7">Tavşanlı MYO</div><!--"açılırliste" adı ile sınıflandırılmış div kutusu oluşturuldu.-->
+<div class="item8">Kütahya Dumlupınar Üniversitesi</div><!--"açılırliste" adı ile sınıflandırılmış div kutusu oluşturuldu.-->
+</div>
+</body>
+</html>
