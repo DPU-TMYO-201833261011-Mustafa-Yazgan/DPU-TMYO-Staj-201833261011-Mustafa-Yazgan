@@ -1,0 +1,63 @@
+.item1 { grid-area: Başlık; } /*item1 sınıfının grid'deki ismi belirlendi.*/
+.item2 { grid-area: Menü; }/*item2 sınıfının grid'deki ismi belirlendi.*/
+.item3 { grid-area: EsasBölüm; }/*item3 sınıfının grid'deki ismi belirlendi.*/
+.item4 { grid-area: Sol; }/*item4 sınıfının grid'deki ismi belirlendi.*/
+.item5 { grid-area: Altbilgi; }/*açılırliste sınıfının grid'deki ismi belirlendi.*/
+.item6 { grid-area: Diğer; }/*açılırliste sınıfının grid'deki ismi belirlendi.*/
+
+.grid-container { 
+  display: grid; /*görüntü şekli "grid" olarak belirlendi.*/
+  grid-template-areas:/*grid bölümlere ayrıldı.*/
+    'Başlık Başlık Başlık Başlık Başlık Başlık '
+    'EsasBölüm EsasBölüm EsasBölüm EsasBölüm EsasBölüm EsasBölüm'
+    'Altbilgi Altbilgi Altbilgi Altbilgi Altbilgi Altbilgi'
+	'Sol Sol Sol Sol Sol Sol'
+	'Menü Menü Menü Menü Menü Menü'
+	'Diğer Diğer Diğer Diğer Diğer Diğer';
+	grid-gap: 10px;/*grid hücreleri arasındaki boşluk 10 piksel olarak ayarlandı.*/
+  background-color: grey; /*arkaplan rengi aqua yani deniz rengi olarak ayarlandı.*/
+  padding: 10px;/*grid'in boyutu 10 piksel olarak ayarlandı*/  
+}
+.grid-container > div { 
+  background-color: white;/*gridin içerisindeki div kutularının arkaplan rengi ayarlandı. */
+  text-align: center;/*gridin içerisindeki div kutularının içerisindeki yazılar ortalandı.*/
+  padding: 20px;/*gridin içerisindeki div kutularını boyutları 20 piksel olarak ayarlandı*/
+  font-size: 30px;/*gridin içerisindeki div kutularının içerisindeki yazıların boyutları 30 piksel olarak ayarlandı.*/
+ 
+}
+ul{
+  list-style-type: None;
+  text-align:left;
+}
+@media screen and (min-width: 500px){
+.item1 { grid-area: Başlık; } /*item1 sınıfının grid'deki ismi belirlendi.*/
+.item2 { grid-area: Menü; }/*item2 sınıfının grid'deki ismi belirlendi.*/
+.item3 { grid-area: EsasBölüm; }/*item3 sınıfının grid'deki ismi belirlendi.*/
+.item4 { grid-area: Sol; }/*item4 sınıfının grid'deki ismi belirlendi.*/
+.item5 { grid-area: Altbilgi; }/*açılırliste sınıfının grid'deki ismi belirlendi.*/
+.item6 { grid-area: Diğer; }/*açılırliste sınıfının grid'deki ismi belirlendi.*/
+
+.grid-container { 
+  display: grid; /*görüntü şekli "grid" olarak belirlendi.*/
+  grid-template-areas:/*grid bölümlere ayrıldı.*/
+    'Başlık Başlık EsasBölüm EsasBölüm EsasBölüm EsasBölüm'
+    'Başlık Başlık Altbilgi Altbilgi Altbilgi Altbilgi'
+	'Başlık Başlık Sol Sol Sol Sol'
+	'Başlık Başlık Menü Menü Menü Menü'
+	'Başlık Başlık Diğer Diğer Diğer Diğer';
+	grid-gap: 10px;/*grid hücreleri arasındaki boşluk 10 piksel olarak ayarlandı.*/
+  background-color: grey; /*arkaplan rengi aqua yani deniz rengi olarak ayarlandı.*/
+  padding: 10px;/*grid'in boyutu 10 piksel olarak ayarlandı*/  
+}
+.grid-container > div { 
+  background-color: white;/*gridin içerisindeki div kutularının arkaplan rengi ayarlandı. */
+  text-align: center;/*gridin içerisindeki div kutularının içerisindeki yazılar ortalandı.*/
+  padding: 20px;/*gridin içerisindeki div kutularını boyutları 20 piksel olarak ayarlandı*/
+  font-size: 30px;/*gridin içerisindeki div kutularının içerisindeki yazıların boyutları 30 piksel olarak ayarlandı.*/
+ 
+}
+ul{
+  list-style-type: None;
+  text-align:left;
+}
+}
